@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.Salary-Calculation{
+  /* background: conic-gradient(#880bea 0deg,#880bea 50deg ,red 50deg , red 90deg ,green 90deg , green 300deg); */
+}
+.Salary-Calculation::after{
+position: absolute;
+content: " ";
+width: 210px;
+height: 210px;
+border-radius: 50%;
+background-color: white;
+}
+
+.Salary-Calculation-responcive::after{
+  position: absolute;
+  width: 150px;
+  content: " ";
+  height: 150px;
+  background-color: white;
+  border-radius: 50%;
+}
+/* style={{background:"conic-gradient(#009FF8 260deg, #000000 260deg, #ended 290deg , #ff0000 290deg  )"}} */
