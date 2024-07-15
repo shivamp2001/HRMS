@@ -7,7 +7,7 @@ import {toast } from 'react-toastify';
 import {useDispatch} from "react-redux"
 const Login = () => {
   const navigation = useNavigate();
-  const dispatch=useDispatch()
+  // const dispatch=useDispatch()
   const [inputs,setInputs]=useState({
     email:"",
     password:"",
@@ -53,7 +53,7 @@ const Login = () => {
       
       } })
       
-      console.log(response);
+      // console.log(response);
          
   }
 
@@ -82,7 +82,7 @@ const Login = () => {
 
       {/* second part login form */}
         <div className='w-full md:w-1/2 h-[70%] md:h-full flex items-center lg:pl-2 p-[10px] justify-center  '>
-          <form onSubmit={(e)=>HandleSubmit(e)} className="w-full h-full bg-white lg:w-[80%] lg:h-[90%] rounded-xl">
+          <form  className="w-full h-full bg-white lg:w-[80%] lg:h-[90%] rounded-xl">
 
               <div className="flex justify-end p-2 sm:p-5 md:p-7">
                 <Link to={"/signup"}><button className='bg-[#1A457C] w-[100px] rounded-xl 
@@ -122,7 +122,7 @@ const Login = () => {
 
               <div className="flex justify-center">
                  <button type='submit' className='bg-[#1A457C] p-1 text-white w-[40%] rounded-lg 
-                mt-[8%] sm:mt-0 md:mt-[10%] text-center'>Sign In</button>
+                mt-[8%] sm:mt-0 md:mt-[10%] text-center' onClick={()=>navigation("/MyProfile/Personalinfo")}>Sign In</button>
               </div>
 
           </form>
